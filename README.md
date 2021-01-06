@@ -7,7 +7,7 @@ iOS기초편 🎓
 
 📚 이론 + 간단한 프로젝트 실습 📱
 
-1주차 - Swift 1(타입 클로저 구조체클래스 옵셔널), Xcode 톺아보기, 깃 (홈화면)
+[1주차 - Swift 1(타입 클로저 구조체클래스 옵셔널), Xcode 톺아보기, 깃 (홈화면)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/1%EC%A3%BC%EC%B0%A8#1%EC%A3%BC%EC%B0%A8---swift-ios-basic)
 
 2주차 - 스토리보드, 오토레이아웃, 탭바, mvc (홈 화면)
 
