@@ -15,7 +15,7 @@ iOS기초편 🎓
 
 4주차 - Cocoapods, kingfisher로 이미지캐시, 네비게이션, 푸쉬 모달, 뷰 앱 라이프사이클 (홈화면)
 
-5주차 - 스크롤뷰, 페이지뷰컨, swift2 (이넘, 프로토콜, 익스텐션, arc) (게임 디테일)
+[5주차 - Gesture, Animation NavigationBar, Modal, View & App LifeCycle (게임 디테일)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/5%EC%A3%BC%EC%B0%A8#5%EC%A3%BC%EC%B0%A8-gesture-animation-navigationbar-modal-view--app-lifecycle)
 
 6주차 - kvo, 콜렉션뷰, 레이어, notification (Featured)
 
