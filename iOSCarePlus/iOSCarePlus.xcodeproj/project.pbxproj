@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC67A76BB7FA744BF56ED9F2 /* Pods_iOSCarePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A70952860E8B3BC0269B72 /* Pods_iOSCarePlus.framework */; };
 		D91C2BD4257FC0460084816D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C2BD3257FC0460084816D /* AppDelegate.swift */; };
 		D91C2BD6257FC0460084816D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C2BD5257FC0460084816D /* SceneDelegate.swift */; };
 		D91C2BD8257FC0460084816D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91C2BD7257FC0460084816D /* ViewController.swift */; };
@@ -14,11 +15,14 @@
 		D91C2BDD257FC0490084816D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91C2BDC257FC0490084816D /* Assets.xcassets */; };
 		D91C2BE0257FC0490084816D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91C2BDE257FC0490084816D /* LaunchScreen.storyboard */; };
 		D9DEF80C25A55720005420B9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF80B25A55720005420B9 /* .swiftlint.yml */; };
-		D9DEF81025A55974005420B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF80F25A55974005420B9 /* Alamofire */; };
-		D9DEF81425A55993005420B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF81325A55993005420B9 /* SnapKit */; };
+		D9DEF81025A55974005420B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */; };
+		D9DEF81425A55993005420B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A70952860E8B3BC0269B72 /* Pods_iOSCarePlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCarePlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D8A08E85DB94E9776E20161 /* Pods-iOSCarePlus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCarePlus.debug.xcconfig"; path = "Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus.debug.xcconfig"; sourceTree = "<group>"; };
+		A592B028A5913AB5D0671245 /* Pods-iOSCarePlus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCarePlus.release.xcconfig"; path = "Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus.release.xcconfig"; sourceTree = "<group>"; };
 		D91C2BD0257FC0460084816D /* iOSCarePlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCarePlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91C2BD3257FC0460084816D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D91C2BD5257FC0460084816D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,20 +39,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DEF81025A55974005420B9 /* Alamofire in Frameworks */,
-				D9DEF81425A55993005420B9 /* SnapKit in Frameworks */,
+				D9DEF81025A55974005420B9 /* BuildFile in Frameworks */,
+				D9DEF81425A55993005420B9 /* BuildFile in Frameworks */,
+				AC67A76BB7FA744BF56ED9F2 /* Pods_iOSCarePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5A7A6D99398DF49372C2800 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D8A08E85DB94E9776E20161 /* Pods-iOSCarePlus.debug.xcconfig */,
+				A592B028A5913AB5D0671245 /* Pods-iOSCarePlus.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D91C2BC7257FC0460084816D = {
 			isa = PBXGroup;
 			children = (
 				D9DEF80B25A55720005420B9 /* .swiftlint.yml */,
 				D91C2BD2257FC0460084816D /* iOSCarePlus */,
 				D91C2BD1257FC0460084816D /* Products */,
+				C5A7A6D99398DF49372C2800 /* Pods */,
+				E3830CB1052648CF5371155E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +91,14 @@
 			path = iOSCarePlus;
 			sourceTree = "<group>";
 		};
+		E3830CB1052648CF5371155E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01A70952860E8B3BC0269B72 /* Pods_iOSCarePlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,10 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D91C2BE4257FC0490084816D /* Build configuration list for PBXNativeTarget "iOSCarePlus" */;
 			buildPhases = (
+				1348C4AE490EB8D5BD75DD59 /* [CP] Check Pods Manifest.lock */,
 				D9DEF80525A5562C005420B9 /* run swiftlint */,
 				D91C2BCC257FC0460084816D /* Sources */,
 				D91C2BCD257FC0460084816D /* Frameworks */,
 				D91C2BCE257FC0460084816D /* Resources */,
+				AB2EDB66127A047F8D08D046 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -92,8 +119,8 @@
 			);
 			name = iOSCarePlus;
 			packageProductDependencies = (
-				D9DEF80F25A55974005420B9 /* Alamofire */,
-				D9DEF81325A55993005420B9 /* SnapKit */,
+				D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */,
+				D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */,
 			);
 			productName = iOSCarePlus;
 			productReference = D91C2BD0257FC0460084816D /* iOSCarePlus.app */;
@@ -123,8 +150,8 @@
 			);
 			mainGroup = D91C2BC7257FC0460084816D;
 			packageReferences = (
-				D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */,
+				D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = D91C2BD1257FC0460084816D /* Products */;
 			projectDirPath = "";
@@ -150,6 +177,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1348C4AE490EB8D5BD75DD59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSCarePlus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB2EDB66127A047F8D08D046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSCarePlus/Pods-iOSCarePlus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D9DEF80525A5562C005420B9 /* run swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -321,6 +387,7 @@
 		};
 		D91C2BE5257FC0490084816D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8A08E85DB94E9776E20161 /* Pods-iOSCarePlus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -341,6 +408,7 @@
 		};
 		D91C2BE6257FC0490084816D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A592B028A5913AB5D0671245 /* Pods-iOSCarePlus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -383,7 +451,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -391,7 +459,7 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -402,14 +470,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D9DEF80F25A55974005420B9 /* Alamofire */ = {
+		D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */;
 			productName = Alamofire;
 		};
-		D9DEF81325A55993005420B9 /* SnapKit */ = {
+		D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
