@@ -23,6 +23,7 @@
 		D9DEF82925A566FE005420B9 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82825A566FE005420B9 /* NewGameResponse.swift */; };
 		D9DEF82F25A56A23005420B9 /* GameItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */; };
 		D9DEF83325A56BD3005420B9 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */; };
+		D9DEF83625A5D5E5005420B9 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF83525A5D5E4005420B9 /* Navigation.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		D9DEF82825A566FE005420B9 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
 		D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
 		D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		D9DEF83525A5D5E4005420B9 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				D91C2BDE257FC0490084816D /* LaunchScreen.storyboard */,
 				D91C2BE1257FC0490084816D /* Info.plist */,
 				D9DEF81A25A56448005420B9 /* GameList */,
+				D9DEF83525A5D5E4005420B9 /* Navigation.storyboard */,
 			);
 			path = iOSCarePlus;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				D9DEF80C25A55720005420B9 /* .swiftlint.yml in Resources */,
 				D91C2BE0257FC0490084816D /* LaunchScreen.storyboard in Resources */,
+				D9DEF83625A5D5E5005420B9 /* Navigation.storyboard in Resources */,
 				D91C2BDD257FC0490084816D /* Assets.xcassets in Resources */,
 				D91C2BDB257FC0460084816D /* Main.storyboard in Resources */,
 			);

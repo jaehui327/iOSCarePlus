@@ -250,6 +250,16 @@
             </objects>
             <point key="canvasLocation" x="-1020" y="690"/>
         </scene>
+        <!--navigationController-->
+        <scene sceneID="TcE-kz-hYZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Navigation" referencedIdentifier="navigationController" id="J9X-C7-con" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="t5M-mE-EAs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2h-Y8-asm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181" y="816"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kZz-oV-iya">
             <objects>
@@ -266,6 +276,7 @@
                         <segue destination="0xc-2m-iza" kind="relationship" relationship="viewControllers" id="meo-cK-bDe"/>
                         <segue destination="QO3-j8-TAA" kind="relationship" relationship="viewControllers" id="UQY-QE-EyK"/>
                         <segue destination="ztc-3b-o1N" kind="relationship" relationship="viewControllers" id="JxS-n7-Zgp"/>
+                        <segue destination="J9X-C7-con" kind="relationship" relationship="viewControllers" id="9Ea-zE-ljj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6I-gp-uAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
