@@ -20,8 +20,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lyX-Xs-ftp">
                                 <rect key="frame" x="0.0" y="0.0" width="2071" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iod-rA-9lU">
-                                <rect key="frame" x="25" y="-200" width="80" height="79.5"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iod-rA-9lU">
+                                <rect key="frame" x="25" y="48" width="80" height="77"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nintendo Store" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-df-iDS">
                                         <rect key="frame" x="9" y="23" width="62" height="33.5"/>
@@ -31,12 +31,16 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87843137250000003" green="0.066666666669999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="HZW-df-iDS" firstAttribute="leading" secondItem="iod-rA-9lU" secondAttribute="leading" constant="9" id="cWy-RP-yT7"/>
                                     <constraint firstItem="HZW-df-iDS" firstAttribute="top" secondItem="iod-rA-9lU" secondAttribute="top" constant="23" id="fS3-4Z-2pH"/>
                                     <constraint firstAttribute="bottom" secondItem="HZW-df-iDS" secondAttribute="bottom" constant="23" id="nBX-97-rKT"/>
                                     <constraint firstAttribute="trailing" secondItem="HZW-df-iDS" secondAttribute="trailing" constant="9" id="pur-kd-G8c"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="HxJ-07-hYr" appends="YES" id="2YM-1c-VpE"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -57,8 +61,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="HxJ-07-hYr">
+                    <connections>
+                        <action selector="logoTapAction:" destination="BYZ-38-t0r" id="oKm-vk-KC8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1020" y="-53"/>
+            <point key="canvasLocation" x="-1020" y="-53.523238380809602"/>
         </scene>
         <!--Game List View Controller-->
         <scene sceneID="xpp-lw-xOn">
