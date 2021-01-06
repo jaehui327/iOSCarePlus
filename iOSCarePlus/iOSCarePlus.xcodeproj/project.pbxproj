@@ -18,6 +18,11 @@
 		D9DEF81025A55974005420B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF80F25A55974005420B9 /* Alamofire */; };
 		D9DEF81425A55993005420B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF81325A55993005420B9 /* SnapKit */; };
 		D9DEF81C25A5647C005420B9 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF81B25A5647C005420B9 /* GameListViewController.swift */; };
+		D9DEF82325A5663B005420B9 /* GameItemCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82225A5663B005420B9 /* GameItemCodeTableViewCell.swift */; };
+		D9DEF82625A566E1005420B9 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82525A566E1005420B9 /* GameItemModel.swift */; };
+		D9DEF82925A566FE005420B9 /* NewGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82825A566FE005420B9 /* NewGameResponse.swift */; };
+		D9DEF82F25A56A23005420B9 /* GameItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */; };
+		D9DEF83325A56BD3005420B9 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		D91C2BE1257FC0490084816D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DEF80B25A55720005420B9 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D9DEF81B25A5647C005420B9 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		D9DEF82225A5663B005420B9 /* GameItemCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemCodeTableViewCell.swift; sourceTree = "<group>"; };
+		D9DEF82525A566E1005420B9 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
+		D9DEF82825A566FE005420B9 /* NewGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameResponse.swift; sourceTree = "<group>"; };
+		D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
+		D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,8 @@
 		D9DEF81F25A56496005420B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D9DEF82525A566E1005420B9 /* GameItemModel.swift */,
+				D9DEF82825A566FE005420B9 /* NewGameResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +125,9 @@
 		D9DEF82025A564A2005420B9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				D9DEF82225A5663B005420B9 /* GameItemCodeTableViewCell.swift */,
+				D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */,
+				D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -268,7 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9DEF81C25A5647C005420B9 /* GameListViewController.swift in Sources */,
+				D9DEF83325A56BD3005420B9 /* IndicatorCell.swift in Sources */,
 				D91C2BD8257FC0460084816D /* ViewController.swift in Sources */,
+				D9DEF82925A566FE005420B9 /* NewGameResponse.swift in Sources */,
+				D9DEF82625A566E1005420B9 /* GameItemModel.swift in Sources */,
+				D9DEF82325A5663B005420B9 /* GameItemCodeTableViewCell.swift in Sources */,
+				D9DEF82F25A56A23005420B9 /* GameItemTableViewCell.swift in Sources */,
 				D91C2BD4257FC0460084816D /* AppDelegate.swift in Sources */,
 				D91C2BD6257FC0460084816D /* SceneDelegate.swift in Sources */,
 			);
