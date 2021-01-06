@@ -1,24 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XC8-KT-91E">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lyX-Xs-ftp">
+                                <rect key="frame" x="0.0" y="0.0" width="2071" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iod-rA-9lU">
+                                <rect key="frame" x="25" y="-200" width="80" height="79.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nintendo Store" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZW-df-iDS">
+                                        <rect key="frame" x="9" y="23" width="62" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.066666666669999999" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="HZW-df-iDS" firstAttribute="leading" secondItem="iod-rA-9lU" secondAttribute="leading" constant="9" id="cWy-RP-yT7"/>
+                                    <constraint firstItem="HZW-df-iDS" firstAttribute="top" secondItem="iod-rA-9lU" secondAttribute="top" constant="23" id="fS3-4Z-2pH"/>
+                                    <constraint firstAttribute="bottom" secondItem="HZW-df-iDS" secondAttribute="bottom" constant="23" id="nBX-97-rKT"/>
+                                    <constraint firstAttribute="trailing" secondItem="HZW-df-iDS" secondAttribute="trailing" constant="9" id="pur-kd-G8c"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="lyX-Xs-ftp" secondAttribute="bottom" id="3P3-gQ-IHe"/>
+                            <constraint firstItem="iod-rA-9lU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-200" id="LPb-0U-BM0"/>
+                            <constraint firstItem="lyX-Xs-ftp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LW6-Pi-VSH"/>
+                            <constraint firstItem="iod-rA-9lU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="j35-5F-fHh"/>
+                            <constraint firstItem="lyX-Xs-ftp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="von-z5-Y9l"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="pencil.circle" catalog="system" id="47q-WT-AI1"/>
+                    <connections>
+                        <outlet property="backgroundImageViewLeadingConstraint" destination="LW6-Pi-VSH" id="a9f-hy-HRg"/>
+                        <outlet property="logoView" destination="iod-rA-9lU" id="S4g-a9-IYs"/>
+                        <outlet property="logoViewTopConstraint" destination="LPb-0U-BM0" id="AaS-RE-5pX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="752.17391304347836" y="-52.232142857142854"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kZz-oV-iya">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XC8-KT-91E" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Peb-50-O9v">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="et3-eM-fWT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6I-gp-uAm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157.97101449275362" y="-52.232142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="homeBackground" width="2071" height="812"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
