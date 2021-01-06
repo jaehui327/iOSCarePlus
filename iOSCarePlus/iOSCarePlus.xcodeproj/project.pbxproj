@@ -15,8 +15,9 @@
 		D91C2BDD257FC0490084816D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91C2BDC257FC0490084816D /* Assets.xcassets */; };
 		D91C2BE0257FC0490084816D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91C2BDE257FC0490084816D /* LaunchScreen.storyboard */; };
 		D9DEF80C25A55720005420B9 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF80B25A55720005420B9 /* .swiftlint.yml */; };
-		D9DEF81025A55974005420B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */; };
-		D9DEF81425A55993005420B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */; };
+		D9DEF81025A55974005420B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF80F25A55974005420B9 /* Alamofire */; };
+		D9DEF81425A55993005420B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEF81325A55993005420B9 /* SnapKit */; };
+		D9DEF81C25A5647C005420B9 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF81B25A5647C005420B9 /* GameListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D91C2BDF257FC0490084816D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D91C2BE1257FC0490084816D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9DEF80B25A55720005420B9 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D9DEF81B25A5647C005420B9 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9DEF81025A55974005420B9 /* BuildFile in Frameworks */,
-				D9DEF81425A55993005420B9 /* BuildFile in Frameworks */,
+				D9DEF81025A55974005420B9 /* Alamofire in Frameworks */,
+				D9DEF81425A55993005420B9 /* SnapKit in Frameworks */,
 				AC67A76BB7FA744BF56ED9F2 /* Pods_iOSCarePlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +56,6 @@
 				4D8A08E85DB94E9776E20161 /* Pods-iOSCarePlus.debug.xcconfig */,
 				A592B028A5913AB5D0671245 /* Pods-iOSCarePlus.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,8 +88,33 @@
 				D91C2BDC257FC0490084816D /* Assets.xcassets */,
 				D91C2BDE257FC0490084816D /* LaunchScreen.storyboard */,
 				D91C2BE1257FC0490084816D /* Info.plist */,
+				D9DEF81A25A56448005420B9 /* GameList */,
 			);
 			path = iOSCarePlus;
+			sourceTree = "<group>";
+		};
+		D9DEF81A25A56448005420B9 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				D9DEF81B25A5647C005420B9 /* GameListViewController.swift */,
+				D9DEF81F25A56496005420B9 /* Model */,
+				D9DEF82025A564A2005420B9 /* Cell */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		D9DEF81F25A56496005420B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9DEF82025A564A2005420B9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E3830CB1052648CF5371155E /* Frameworks */ = {
@@ -119,8 +145,8 @@
 			);
 			name = iOSCarePlus;
 			packageProductDependencies = (
-				D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */,
-				D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */,
+				D9DEF80F25A55974005420B9 /* Alamofire */,
+				D9DEF81325A55993005420B9 /* SnapKit */,
 			);
 			productName = iOSCarePlus;
 			productReference = D91C2BD0257FC0460084816D /* iOSCarePlus.app */;
@@ -150,8 +176,8 @@
 			);
 			mainGroup = D91C2BC7257FC0460084816D;
 			packageReferences = (
-				D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */,
-				D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */,
+				D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = D91C2BD1257FC0460084816D /* Products */;
 			projectDirPath = "";
@@ -241,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9DEF81C25A5647C005420B9 /* GameListViewController.swift in Sources */,
 				D91C2BD8257FC0460084816D /* ViewController.swift in Sources */,
 				D91C2BD4257FC0460084816D /* AppDelegate.swift in Sources */,
 				D91C2BD6257FC0460084816D /* SceneDelegate.swift in Sources */,
@@ -451,7 +478,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */ = {
+		D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -459,7 +486,7 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */ = {
+		D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -470,14 +497,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D9DEF80F25A55974005420B9 /* SwiftPackageProductDependency */ = {
+		D9DEF80F25A55974005420B9 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9DEF80E25A55973005420B9 /* RemoteSwiftPackageReference */;
+			package = D9DEF80E25A55973005420B9 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		D9DEF81325A55993005420B9 /* SwiftPackageProductDependency */ = {
+		D9DEF81325A55993005420B9 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9DEF81225A55993005420B9 /* RemoteSwiftPackageReference */;
+			package = D9DEF81225A55993005420B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
