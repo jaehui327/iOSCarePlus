@@ -103,16 +103,30 @@
                                                 <constraint firstAttribute="height" constant="157" id="Dq6-TM-xog"/>
                                             </constraints>
                                         </view>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8A-L8-ZDz">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8A-L8-ZDz" customClass="SelectableButton" customModule="iOSCarePlus" customModuleProvider="target">
                                             <rect key="frame" x="20" y="368" width="53" height="30"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <state key="normal" title="New"/>
+                                            <connections>
+                                                <action selector="newButtonTouchUp:" destination="0xc-2m-iza" eventType="touchUpInside" id="8G4-66-cNS"/>
+                                            </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-Hb-1rO">
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-Hb-1rO" customClass="SelectableButton" customModule="iOSCarePlus" customModuleProvider="target">
                                             <rect key="frame" x="89" y="368" width="51" height="30"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <state key="normal" title="Sale"/>
+                                            <connections>
+                                                <action selector="saleButtonTouchUp:" destination="0xc-2m-iza" eventType="touchUpInside" id="fLl-Xg-Uwc"/>
+                                            </connections>
                                         </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22E-xh-md3">
+                                            <rect key="frame" x="16.5" y="406" width="60" height="2"/>
+                                            <color key="backgroundColor" name="black"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="KxK-hf-lCq"/>
+                                                <constraint firstAttribute="height" constant="2" id="nkP-qF-2Ak"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
@@ -120,8 +134,10 @@
                                         <constraint firstItem="RBo-Hb-1rO" firstAttribute="leading" secondItem="h8A-L8-ZDz" secondAttribute="trailing" constant="16" id="75A-jp-XSV"/>
                                         <constraint firstAttribute="trailing" secondItem="YaX-Zr-bK7" secondAttribute="trailing" constant="20" id="7Iy-Jq-jmr"/>
                                         <constraint firstItem="gSi-Gv-WrP" firstAttribute="top" secondItem="YaX-Zr-bK7" secondAttribute="bottom" constant="35" id="8YX-G7-7Aq"/>
+                                        <constraint firstItem="22E-xh-md3" firstAttribute="centerX" secondItem="h8A-L8-ZDz" secondAttribute="centerX" id="D6e-46-UEm"/>
                                         <constraint firstItem="YaX-Zr-bK7" firstAttribute="leading" secondItem="sol-OE-rOX" secondAttribute="leading" constant="20" id="IIy-nd-gSj"/>
                                         <constraint firstItem="gSi-Gv-WrP" firstAttribute="trailing" secondItem="YaX-Zr-bK7" secondAttribute="trailing" id="O7c-Z3-J4w"/>
+                                        <constraint firstItem="22E-xh-md3" firstAttribute="top" secondItem="h8A-L8-ZDz" secondAttribute="bottom" constant="4" id="Pz2-4m-RuN"/>
                                         <constraint firstItem="h8A-L8-ZDz" firstAttribute="leading" secondItem="YaX-Zr-bK7" secondAttribute="leading" id="Sf5-UJ-Bpi"/>
                                         <constraint firstItem="6wK-IT-fI9" firstAttribute="leading" secondItem="sol-OE-rOX" secondAttribute="leading" id="WEY-Nd-Pel"/>
                                         <constraint firstItem="gSi-Gv-WrP" firstAttribute="leading" secondItem="YaX-Zr-bK7" secondAttribute="leading" id="Yci-rd-xOJ"/>
@@ -227,6 +243,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="gameIcon" id="Pvy-sf-XgY"/>
                     <connections>
+                        <outlet property="newButton" destination="h8A-L8-ZDz" id="Yl1-6u-TDK"/>
+                        <outlet property="saleButton" destination="RBo-Hb-1rO" id="7lZ-cK-l3q"/>
+                        <outlet property="selectedLineConstraint" destination="D6e-46-UEm" id="0wC-ia-Oe6"/>
                         <outlet property="tableView" destination="Dzq-Ne-QFp" id="UlG-a3-SeV"/>
                     </connections>
                 </viewController>
@@ -306,8 +325,11 @@
         <image name="homeBackground" width="2071" height="812"/>
         <image name="homeIcon" width="55" height="55"/>
         <image name="shopIcon" width="55" height="55"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="blackTwo">
-            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

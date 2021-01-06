@@ -11,6 +11,9 @@ import UIKit
 class GameListViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var newButton: SelectableButton!
+    @IBOutlet private weak var saleButton: SelectableButton!
+    @IBOutlet private weak var selectedLineConstraint: NSLayoutConstraint!
     
     // MARK: - properties
     private var getNewGameListURL: String {
@@ -33,6 +36,29 @@ class GameListViewController: UIViewController {
         newGameListApiCall()
     }
 
+    // MARK: - IBAction
+    @IBAction private func newButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = true
+        saleButton.isSelected = false
+        
+        UIView.animate(withDuration: 0.1) { [weak self] in
+            self?.selectedLineConstraint.constant = 0
+            self?.view.layoutIfNeeded()
+        }
+    }
+    
+    @IBAction private func saleButtonTouchUp(_ sender: Any) {
+        newButton.isSelected = false
+        saleButton.isSelected = true
+        
+        let constant: CGFloat = saleButton.center.x - newButton.center.x
+        UIView.animate(withDuration: 0.1) { [weak self] in
+            self?.selectedLineConstraint.constant = constant
+            self?.view.layoutIfNeeded()
+        }
+    }
+    
+    // MARK: - Methods
     private func newGameListApiCall() {
         AF.request(getNewGameListURL).responseJSON { [weak self] response in
             guard let data = response.data else { return }

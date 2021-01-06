@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction private func logoTapAction(_ sender: UITapGestureRecognizer) {
-        print("⚡️ tap")
         self.blinkLogoAnimation()
     }
     

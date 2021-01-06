@@ -24,6 +24,8 @@
 		D9DEF82F25A56A23005420B9 /* GameItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */; };
 		D9DEF83325A56BD3005420B9 /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */; };
 		D9DEF83625A5D5E5005420B9 /* Navigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF83525A5D5E4005420B9 /* Navigation.storyboard */; };
+		D9DEF83925A5DF96005420B9 /* SelectableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEF83825A5DF96005420B9 /* SelectableButton.swift */; };
+		D9DEF83C25A5DFFE005420B9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DEF83B25A5DFFE005420B9 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		D9DEF82E25A56A23005420B9 /* GameItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemTableViewCell.swift; sourceTree = "<group>"; };
 		D9DEF83225A56BD3005420B9 /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
 		D9DEF83525A5D5E4005420B9 /* Navigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Navigation.storyboard; sourceTree = "<group>"; };
+		D9DEF83825A5DF96005420B9 /* SelectableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableButton.swift; sourceTree = "<group>"; };
+		D9DEF83B25A5DFFE005420B9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				D91C2BD7257FC0460084816D /* ViewController.swift */,
 				D91C2BD9257FC0460084816D /* Main.storyboard */,
 				D91C2BDC257FC0490084816D /* Assets.xcassets */,
+				D9DEF83B25A5DFFE005420B9 /* Colors.xcassets */,
 				D91C2BDE257FC0490084816D /* LaunchScreen.storyboard */,
 				D91C2BE1257FC0490084816D /* Info.plist */,
 				D9DEF81A25A56448005420B9 /* GameList */,
@@ -112,6 +117,7 @@
 				D9DEF81B25A5647C005420B9 /* GameListViewController.swift */,
 				D9DEF81F25A56496005420B9 /* Model */,
 				D9DEF82025A564A2005420B9 /* Cell */,
+				D9DEF83825A5DF96005420B9 /* SelectableButton.swift */,
 			);
 			path = GameList;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				D9DEF80C25A55720005420B9 /* .swiftlint.yml in Resources */,
 				D91C2BE0257FC0490084816D /* LaunchScreen.storyboard in Resources */,
 				D9DEF83625A5D5E5005420B9 /* Navigation.storyboard in Resources */,
+				D9DEF83C25A5DFFE005420B9 /* Colors.xcassets in Resources */,
 				D91C2BDD257FC0490084816D /* Assets.xcassets in Resources */,
 				D91C2BDB257FC0460084816D /* Main.storyboard in Resources */,
 			);
@@ -289,6 +296,7 @@
 				D9DEF81C25A5647C005420B9 /* GameListViewController.swift in Sources */,
 				D9DEF83325A56BD3005420B9 /* IndicatorCell.swift in Sources */,
 				D91C2BD8257FC0460084816D /* ViewController.swift in Sources */,
+				D9DEF83925A5DF96005420B9 /* SelectableButton.swift in Sources */,
 				D9DEF82925A566FE005420B9 /* NewGameResponse.swift in Sources */,
 				D9DEF82625A566E1005420B9 /* GameItemModel.swift in Sources */,
 				D9DEF82325A5663B005420B9 /* GameItemCodeTableViewCell.swift in Sources */,
