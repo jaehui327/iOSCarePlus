@@ -9,7 +9,7 @@ iOS기초편 🎓
 
 [1주차 - Swift 1(타입 클로저 구조체클래스 옵셔널), Xcode 톺아보기, 깃 (홈화면)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/1%EC%A3%BC%EC%B0%A8#1%EC%A3%BC%EC%B0%A8---swift-ios-basic)
 
-2주차 - 스토리보드, 오토레이아웃, 탭바, mvc (홈 화면)
+[2주차 - Storyboard, Autolayout, TabBar, MVC (홈화면)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/2%EC%A3%BC%EC%B0%A8#2%EC%A3%BC%EC%B0%A8-storyboard-autolayout-tabbar-mvc)
 
 3주차 - SPM, 알라모파이어로 통신, 테이블 뷰 (게임 리스트)
 
