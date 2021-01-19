@@ -17,10 +17,13 @@ class GameListViewController: UIViewController {
     
     // MARK: - properties
     private var getNewGameListURL: String {
-        "https://ec.nintendo.com/api/KR/ko/search/new?count=\(newCount)&offset=\(newOffset)"
+        "https://ec.nintendo.com/api/KR/ko/search/new?count=\(count)&offset=\(offset)"
     }
-    private var newCount: Int = 10
-    private var newOffset: Int = 0
+    private var getSaleGameListURL: String {
+        "https://ec.nintendo.com/api/KR/ko/search/sales?count=\(count)&offset=\(offset)"
+    }
+    private var count: Int = 10
+    private var offset: Int = 0
     private var isEnd: Bool = false
     private var model: NewGameResponse? {
         didSet {
@@ -33,7 +36,7 @@ class GameListViewController: UIViewController {
         super.viewDidLoad()
         
 //        tableView.register(GameItemCodeTableViewCell.self, forCellReuseIdentifier: "GameItemCodeTableViewCell")
-        newGameListApiCall()
+        gameListApiCall(url: getNewGameListURL)
     }
 
     // MARK: - IBAction
@@ -45,6 +48,10 @@ class GameListViewController: UIViewController {
             self?.selectedLineConstraint.constant = 0
             self?.view.layoutIfNeeded()
         }
+        offset = 0
+        self.isEnd = false
+        self.model = nil
+        gameListApiCall(url: getNewGameListURL)
     }
     
     @IBAction private func saleButtonTouchUp(_ sender: Any) {
@@ -56,11 +63,15 @@ class GameListViewController: UIViewController {
             self?.selectedLineConstraint.constant = constant
             self?.view.layoutIfNeeded()
         }
+        offset = 0
+        self.isEnd = false
+        self.model = nil
+        gameListApiCall(url: getSaleGameListURL)
     }
     
     // MARK: - Methods
-    private func newGameListApiCall() {
-        AF.request(getNewGameListURL).responseJSON { [weak self] response in
+    private func gameListApiCall(url: String) {
+        AF.request(url).responseJSON { [weak self] response in
             guard let data = response.data else { return }
             
             let decoder: JSONDecoder = JSONDecoder()
@@ -95,8 +106,12 @@ extension GameListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if isIndicatorCell(indexPath) {
-            newOffset += 10
-            newGameListApiCall()
+            offset += 10
+            if newButton.isSelected {
+                gameListApiCall(url: getNewGameListURL)
+            } else {
+                gameListApiCall(url: getSaleGameListURL)
+            }
         }
     }
     
