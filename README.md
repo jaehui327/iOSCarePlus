@@ -17,7 +17,7 @@ iOS기초편 🎓
 
 [5주차 - Gesture, Animation NavigationBar, Modal, View & App LifeCycle (게임 디테일)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/5%EC%A3%BC%EC%B0%A8#5%EC%A3%BC%EC%B0%A8-gesture-animation-navigationbar-modal-view--app-lifecycle)
 
-6주차 - kvo, 콜렉션뷰, 레이어, notification (Featured)
+[6주차 - PageViewController, swift(init, Enum, Protocol, Extension, ARC) (게임 디테일)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/6%EC%A3%BC%EC%B0%A8#6%EC%A3%BC%EC%B0%A8-pageviewcontroller-swiftinit-enum-protocol-extension-arc)
 
 7주차 - userDefaults, keychain, delegate (좋아요, 장바구니)
 
