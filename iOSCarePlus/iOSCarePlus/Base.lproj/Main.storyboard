@@ -253,13 +253,59 @@
             </objects>
             <point key="canvasLocation" x="1620" y="-54.422788605697157"/>
         </scene>
+        <!--Game Detail View Controller-->
+        <scene sceneID="g88-Z9-jlc">
+            <objects>
+                <viewController storyboardIdentifier="GameDetailViewController" id="R3O-Nq-WAL" customClass="GameDetailViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PVe-iQ-aHQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-mr-KxW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8j0-95-efh">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="8j0-95-efh" secondAttribute="height" multiplier="1:1" id="Cb3-gd-n5f"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="4Tw-6l-EPz" kind="embed" id="fif-P3-iuo"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8j0-95-efh" firstAttribute="top" secondItem="jHn-mr-KxW" secondAttribute="top" id="jjO-aQ-9Vm"/>
+                                    <constraint firstAttribute="trailing" secondItem="8j0-95-efh" secondAttribute="trailing" id="lbh-NJ-FOa"/>
+                                    <constraint firstItem="8j0-95-efh" firstAttribute="leading" secondItem="jHn-mr-KxW" secondAttribute="leading" id="odH-U3-TeF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oI7-UB-Tck"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oI7-UB-Tck" firstAttribute="trailing" secondItem="jHn-mr-KxW" secondAttribute="trailing" id="Fv4-VH-dBd"/>
+                            <constraint firstItem="jHn-mr-KxW" firstAttribute="leading" secondItem="oI7-UB-Tck" secondAttribute="leading" id="TMY-Ax-4Sz"/>
+                            <constraint firstItem="jHn-mr-KxW" firstAttribute="top" secondItem="oI7-UB-Tck" secondAttribute="top" id="aZ1-O2-Oij"/>
+                            <constraint firstItem="oI7-UB-Tck" firstAttribute="bottom" secondItem="jHn-mr-KxW" secondAttribute="bottom" id="h28-Sf-ixr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerViewController" destination="8j0-95-efh" id="Qb5-Sd-vSf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pvu-bX-18G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="-54"/>
+        </scene>
         <!--Game Detail Page View Controller-->
         <scene sceneID="REb-Fi-cav">
             <objects>
                 <pageViewController storyboardIdentifier="GameDetailPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4Tw-6l-EPz" customClass="GameDetailPageViewController" customModule="iOSCarePlus" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8u-VC-Jbl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2585" y="-54"/>
+            <point key="canvasLocation" x="3308" y="-57"/>
         </scene>
         <!--Game Detail Image View Controller-->
         <scene sceneID="vdk-23-XtU">
@@ -269,7 +315,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-J4-iNj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zSW-J4-iNj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
@@ -288,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRB-pa-IQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3358" y="-55"/>
+            <point key="canvasLocation" x="4081" y="-58"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Po-gd-fAr">
