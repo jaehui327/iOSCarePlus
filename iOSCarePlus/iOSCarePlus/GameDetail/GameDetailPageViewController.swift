@@ -8,9 +8,9 @@
 import UIKit
 
 class GameDetailPageViewController: UIPageViewController {
-
     // MARK: - properties
-    var orderedViewControllers: [UIViewController]?
+    var orderedViewControllers: [UIViewController]? = []
+    var model: NewGameContent?
     
     // MARK: - life cycle
     override func viewDidLoad() {
@@ -18,15 +18,23 @@ class GameDetailPageViewController: UIPageViewController {
         
         dataSource = self
         
-        orderedViewControllers = [getImageViewController(), getImageViewController(), getImageViewController()]
+        guard let screenShots = model?.screenshots else { return }
+        for screenShot in screenShots {
+            guard let url = screenShot.images.first?.url else { return }
+            let imageViewController = getImageViewController(url: url)
+            orderedViewControllers?.append(imageViewController)
+        }
+        
         if let firstViewController = orderedViewControllers?.first {
             setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
         }
     }
     
     // MARK: - Methods
-    private func getImageViewController() -> UIViewController {
-        return UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameDetailImageViewController")
+    private func getImageViewController(url: String) -> UIViewController {
+        guard let imageViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GameDetailImageViewController") as? GameDetailImageViewController else { return UIViewController() }
+        imageViewController.url = url
+        return imageViewController
     }
 }
 

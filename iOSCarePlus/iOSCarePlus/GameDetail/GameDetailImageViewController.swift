@@ -6,24 +6,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GameDetailImageViewController: UIViewController {
-
+    
+    // MARK: - properties
+    var url: String?
+    
+    // MARK: - IBOutlet
+    @IBOutlet private weak var imageView: UIImageView!
+    
+    // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        guard let stringUrl = url else { return }
+        let url = URL(string: stringUrl)
+        imageView.kf.setImage(with: url)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
