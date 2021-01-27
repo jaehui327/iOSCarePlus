@@ -19,7 +19,7 @@ iOS기초편 🎓
 
 [6주차 - PageViewController, swift(init, Enum, Protocol, Extension, ARC) (게임 디테일)](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/6%EC%A3%BC%EC%B0%A8#6%EC%A3%BC%EC%B0%A8-pageviewcontroller-swiftinit-enum-protocol-extension-arc)
 
-7주차 - userDefaults, keychain, delegate (좋아요, 장바구니)
+[7주차 ScrollView, CollectionView, Certification, 배포, Debug](https://github.com/jaehui327/iOSCarePlus/tree/main/docs/7%EC%A3%BC%EC%B0%A8#7%EC%A3%BC%EC%B0%A8-scrollview-collectionview-certification-%EB%B0%B0%ED%8F%AC-debug)
 
 8주차 - 커스텀 탭바, 커스텀 네비게이션
 
