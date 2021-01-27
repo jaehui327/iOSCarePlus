@@ -120,6 +120,9 @@
                             <constraint firstItem="Wx9-C7-AB5" firstAttribute="top" secondItem="fFP-Xk-oz1" secondAttribute="top" id="ncz-2i-IzW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Wx9-C7-AB5" id="h0a-rh-NxW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gfb-ob-o6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
