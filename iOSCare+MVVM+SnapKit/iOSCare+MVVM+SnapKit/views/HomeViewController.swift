@@ -1,17 +1,18 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  iOSCare+MVVM+SnapKit
 //
-//  Created by dev on 2021/02/15.
+//  Created by 김재희 on 2021/02/20.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
+
     // MARK: - life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(named: "dusk")
+        view.backgroundColor = .white
     }
 }

@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		333496A78511D834626E8C24 /* Pods_iOSCare_MVVM_SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFB6668FA78F6ADB97AF898 /* Pods_iOSCare_MVVM_SnapKit.framework */; };
+		D70C36B725E0F0E000898271 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36B625E0F0E000898271 /* TabBarViewController.swift */; };
+		D70C36BD25E0F20300898271 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36BC25E0F20300898271 /* GameListViewController.swift */; };
+		D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36C025E0F38100898271 /* HomeViewController.swift */; };
 		D71C027E25DE9874003F1902 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71C027D25DE9874003F1902 /* Colors.xcassets */; };
 		D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */; };
 		D7535D4E25DA8A97007DF3D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */; };
-		D7535D5025DA8A97007DF3D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4F25DA8A97007DF3D7 /* ViewController.swift */; };
 		D7535D5525DA8A9A007DF3D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5425DA8A9A007DF3D7 /* Images.xcassets */; };
 		D7535D5825DA8A9A007DF3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5625DA8A9A007DF3D7 /* LaunchScreen.storyboard */; };
 		D7535D6C25DA8D4A007DF3D7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D7535D6B25DA8D4A007DF3D7 /* .swiftlint.yml */; };
@@ -21,11 +23,13 @@
 		5DFB6668FA78F6ADB97AF898 /* Pods_iOSCare_MVVM_SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSCare_MVVM_SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776F1FE90B2D37AA6869B927 /* Pods-iOSCare+MVVM+SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCare+MVVM+SnapKit.debug.xcconfig"; path = "Target Support Files/Pods-iOSCare+MVVM+SnapKit/Pods-iOSCare+MVVM+SnapKit.debug.xcconfig"; sourceTree = "<group>"; };
 		90AF9C6B6AE595CAEF0F4532 /* Pods-iOSCare+MVVM+SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSCare+MVVM+SnapKit.release.xcconfig"; path = "Target Support Files/Pods-iOSCare+MVVM+SnapKit/Pods-iOSCare+MVVM+SnapKit.release.xcconfig"; sourceTree = "<group>"; };
+		D70C36B625E0F0E000898271 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		D70C36BC25E0F20300898271 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
+		D70C36C025E0F38100898271 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D71C027D25DE9874003F1902 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D7535D4825DA8A97007DF3D7 /* iOSCare+MVVM+SnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSCare+MVVM+SnapKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7535D4F25DA8A97007DF3D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7535D5425DA8A9A007DF3D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D7535D5725DA8A9A007DF3D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7535D5925DA8A9A007DF3D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +62,6 @@
 				776F1FE90B2D37AA6869B927 /* Pods-iOSCare+MVVM+SnapKit.debug.xcconfig */,
 				90AF9C6B6AE595CAEF0F4532 /* Pods-iOSCare+MVVM+SnapKit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,7 +118,9 @@
 		D7535D6325DA8B3B007DF3D7 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				D7535D4F25DA8A97007DF3D7 /* ViewController.swift */,
+				D70C36B625E0F0E000898271 /* TabBarViewController.swift */,
+				D70C36C025E0F38100898271 /* HomeViewController.swift */,
+				D70C36BC25E0F20300898271 /* GameListViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -261,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7535D5025DA8A97007DF3D7 /* ViewController.swift in Sources */,
+				D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */,
 				D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */,
+				D70C36B725E0F0E000898271 /* TabBarViewController.swift in Sources */,
+				D70C36BD25E0F20300898271 /* GameListViewController.swift in Sources */,
 				D7535D4E25DA8A97007DF3D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
