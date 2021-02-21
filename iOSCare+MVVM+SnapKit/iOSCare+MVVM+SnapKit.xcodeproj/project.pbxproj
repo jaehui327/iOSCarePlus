@@ -11,6 +11,8 @@
 		D70C36B725E0F0E000898271 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36B625E0F0E000898271 /* TabBarViewController.swift */; };
 		D70C36BD25E0F20300898271 /* GameListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36BC25E0F20300898271 /* GameListViewController.swift */; };
 		D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36C025E0F38100898271 /* HomeViewController.swift */; };
+		D70C36C825E0F66600898271 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36C725E0F66600898271 /* UILabel+Extension.swift */; };
+		D70C36CB25E0F8C900898271 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */; };
 		D71C027E25DE9874003F1902 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71C027D25DE9874003F1902 /* Colors.xcassets */; };
 		D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */; };
 		D7535D4E25DA8A97007DF3D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 		D70C36B625E0F0E000898271 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D70C36BC25E0F20300898271 /* GameListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewController.swift; sourceTree = "<group>"; };
 		D70C36C025E0F38100898271 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D70C36C725E0F66600898271 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		D71C027D25DE9874003F1902 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D7535D4825DA8A97007DF3D7 /* iOSCare+MVVM+SnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSCare+MVVM+SnapKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D70C36C625E0F64C00898271 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D70C36C725E0F66600898271 /* UILabel+Extension.swift */,
+				D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D7535D3F25DA8A97007DF3D7 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +103,7 @@
 				D7535D6425DA8B3F007DF3D7 /* models */,
 				D7535D6325DA8B3B007DF3D7 /* views */,
 				D7535D6225DA8B31007DF3D7 /* viewModels */,
+				D70C36C625E0F64C00898271 /* Extensions */,
 				D7535D6125DA8B24007DF3D7 /* supporting files */,
 			);
 			path = "iOSCare+MVVM+SnapKit";
@@ -268,9 +282,11 @@
 			files = (
 				D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */,
 				D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */,
+				D70C36C825E0F66600898271 /* UILabel+Extension.swift in Sources */,
 				D70C36B725E0F0E000898271 /* TabBarViewController.swift in Sources */,
 				D70C36BD25E0F20300898271 /* GameListViewController.swift in Sources */,
 				D7535D4E25DA8A97007DF3D7 /* SceneDelegate.swift in Sources */,
+				D70C36CB25E0F8C900898271 /* UIButton+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
