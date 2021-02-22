@@ -11,8 +11,7 @@ import UIKit
 class GameListViewController: UIViewController {
     // MARK: - Vars
     lazy var tableView: UITableView = {
-        let tableView: UITableView = UITableView(frame: .zero, style: .plain)
-        tableView.tableFooterView = UIView()
+        let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.delegate = self
         tableView.dataSource = self
@@ -59,19 +58,8 @@ class GameListViewController: UIViewController {
             $0.edges.equalToSuperview()
         }
     }
-}
-
-// MARK: - UITableViewDelegate
-extension GameListViewController: UITableViewDelegate {
-}
-
-// MARK: - UITableViewDataSource
-extension GameListViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView: UIView = UIView(frame: .zero)
-        
-        [titleLabel, rankLabel, rankView, newButton, saleButton].forEach { headerView.addSubview($0) }
-        
+    
+    private func setHeaderViewLayout() {
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(36)
             $0.leading.trailing.equalToSuperview().inset(20)
@@ -98,12 +86,36 @@ extension GameListViewController: UITableViewDataSource {
             $0.leading.equalTo(newButton.snp.trailing).offset(16)
             $0.centerY.equalTo(newButton)
         }
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension GameListViewController: UITableViewDelegate {
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let sectionHeaderHeight: CGFloat = tableView.sectionHeaderHeight
+//        if scrollView.contentOffset.y <= sectionHeaderHeight && scrollView.contentOffset.y >= 0 {
+//            scrollView.contentInset = UIEdgeInsets(top: -scrollView.contentOffset.y, left: 0, bottom: 0, right: 0)
+//        } else if scrollView.contentOffset.y >= sectionHeaderHeight {
+//            scrollView.contentInset = UIEdgeInsets(top: -scrollView.contentOffset.y, left: 0, bottom: 0, right: 0)
+//        }
+//    }
+}
+
+// MARK: - UITableViewDataSource
+extension GameListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView: UIView = UIView(frame: .zero)
+        headerView.backgroundColor = .white
+        
+        [titleLabel, rankLabel, rankView, newButton, saleButton].forEach { headerView.addSubview($0) }
+        
+        setHeaderViewLayout()
         
         return headerView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 30
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
