@@ -27,7 +27,7 @@ struct NewGameContent: Decodable {
     }
 }
 
-struct NewGameResponse: Decodable {
+struct NewGameModel: Decodable {
     var contents: [NewGameContent]
     let length: Int
     let offset: Int

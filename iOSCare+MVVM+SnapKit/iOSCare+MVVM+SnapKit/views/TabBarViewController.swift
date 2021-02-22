@@ -8,20 +8,19 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
     // MARK: - Vars
     lazy var homeVC: HomeViewController = {
-        let vc = HomeViewController()
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIcon"))
-        vc.tabBarItem = tabBarItem
-        return vc
+        let homeVC: HomeViewController = HomeViewController()
+        let tabBarItem: UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "homeIcon"), selectedImage: UIImage(named: "homeIcon"))
+        homeVC.tabBarItem = tabBarItem
+        return homeVC
     }()
     
     lazy var gameListVC: GameListViewController = {
-        let vc = GameListViewController()
-        let tabBarItem = UITabBarItem(title: nil, image: UIImage(named: "gameIcon"), selectedImage: UIImage(named: "gameIcon"))
-        vc.tabBarItem = tabBarItem
-        return vc
+        let gameListVC: GameListViewController = GameListViewController()
+        let tabBarItem: UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "gameIcon"), selectedImage: UIImage(named: "gameIcon"))
+        gameListVC.tabBarItem = tabBarItem
+        return gameListVC
     }()
     
     // MARK: - life cycle
@@ -34,8 +33,5 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-
 }

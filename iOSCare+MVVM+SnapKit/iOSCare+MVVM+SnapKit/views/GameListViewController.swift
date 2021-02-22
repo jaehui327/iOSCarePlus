@@ -5,14 +5,13 @@
 //  Created by 김재희 on 2021/02/20.
 //
 
-import UIKit
 import SnapKit
+import UIKit
 
 class GameListViewController: UIViewController {
-
     // MARK: - Vars
     lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: .zero, style: .plain)
+        let tableView: UITableView = UITableView(frame: .zero, style: .plain)
         tableView.tableFooterView = UIView()
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.delegate = self
@@ -21,27 +20,27 @@ class GameListViewController: UIViewController {
     }()
     
     lazy var titleLabel: UILabel = {
-        let label = UILabel(size: 45, weight: .bold, textColor: .black, text: "Games")
+        let label: UILabel = UILabel(size: 45, weight: .bold, textColor: .black, text: "Games")
         return label
     }()
     
     lazy var rankLabel: UILabel = {
-        let label = UILabel(size: 25, weight: .bold, textColor: .black, text: "Top10")
+        let label: UILabel = UILabel(size: 25, weight: .bold, textColor: .black, text: "Top10")
         return label
     }()
     
     lazy var rankView: UIView = {
-        let view = UIView(frame: .zero)
+        let view: UIView = UIView(frame: .zero)
         return view
     }()
     
     lazy var newButton: UIButton = {
-        let button = UIButton(size: 25, weight: .bold, textColor: .black, text: "New")
+        let button: UIButton = UIButton(size: 25, weight: .bold, textColor: .black, text: "New")
         return button
     }()
     
     lazy var saleButton: UIButton = {
-        let button = UIButton(size: 25, weight: .bold, textColor: .black, text: "Sale")
+        let button: UIButton = UIButton(size: 25, weight: .bold, textColor: .black, text: "Sale")
         return button
     }()
     
@@ -55,7 +54,6 @@ class GameListViewController: UIViewController {
 
     // MARK: - Methods
     private func setLayout() {
-        
         [tableView].forEach { view.addSubview($0) }
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -65,13 +63,12 @@ class GameListViewController: UIViewController {
 
 // MARK: - UITableViewDelegate
 extension GameListViewController: UITableViewDelegate {
-    
 }
 
 // MARK: - UITableViewDataSource
 extension GameListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: .zero)
+        let headerView: UIView = UIView(frame: .zero)
         
         [titleLabel, rankLabel, rankView, newButton, saleButton].forEach { headerView.addSubview($0) }
         
@@ -110,11 +107,9 @@ extension GameListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell: UITableViewCell = UITableViewCell()
         
         cell.selectionStyle = .none
         return cell
     }
-    
-    
 }
