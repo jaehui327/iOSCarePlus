@@ -15,6 +15,7 @@ class GameListViewController: UIViewController {
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(GameItemTableViewCell.self, forCellReuseIdentifier: GameItemTableViewCell.identifier)
         return tableView
     }()
     
@@ -128,7 +129,13 @@ extension GameListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: GameItemTableViewCell.identifier, for: indexPath) as? GameItemTableViewCell else { return .init() }
+        
+        if let formalName: String = viewModel.model?.contents[indexPath.row].formalName,
+           let heroMannerURL: String = viewModel.model?.contents[indexPath.row].heroBannerURL {
+        let model: GameItemModel = GameItemModel(gameTitle: formalName, gameOriginPrice: 10_000, gameDiscountPrice: nil, imageURL: heroMannerURL)
+        cell.setModel(model)
+        }
         
         cell.selectionStyle = .none
         return cell
