@@ -10,5 +10,6 @@ target 'iOSCare+MVVM+SnapKit' do
   pod 'Alamofire'
   pod 'SnapKit'
   pod 'Kingfisher', '~> 5.0'
+  pod 'SwiftLint'
 
 end

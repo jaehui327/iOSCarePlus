@@ -8,12 +8,10 @@
 import UIKit
 
 extension UIButton {
-
     convenience init(size: CGFloat, weight: UIFont.Weight, textColor: UIColor, text: String = "") {
         self.init(frame: .zero)
         self.titleLabel?.font = UIFont.systemFont(ofSize: size, weight: weight)
         self.setTitleColor(textColor, for: .normal)
         self.setTitle(text, for: .normal)
     }
-
 }

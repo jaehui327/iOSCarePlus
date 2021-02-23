@@ -9,7 +9,6 @@ import Alamofire
 import Foundation
 
 class GameListViewModel {
-    
     // MARK: - properties
     private var getNewGameListURL: String {
         "https://ec.nintendo.com/api/KR/ko/search/new?count=\(count)&offset=\(offset)"
