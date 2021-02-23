@@ -10,23 +10,23 @@ import SnapKit
 import UIKit
 
 class GameItemTableViewCell: UITableViewCell {
-    // MARK: - vars
-    lazy var gameImageView: UIImageView = {
+    // MARK: - UIComponents
+    let gameImageView: UIImageView = {
         let imageView: UIImageView = UIImageView(frame: .zero)
         return imageView
     }()
     
-    lazy var gameTitleLabel: UILabel = {
+    let gameTitleLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .semibold, textColor: .black)
         return label
     }()
     
-    lazy var gameOriginPriceLabel: UILabel = {
+    let gameOriginPriceLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .regular, textColor: .veryLightPink)
         return label
     }()
     
-    lazy var gameCurrentPriceLabel: UILabel = {
+    let gameCurrentPriceLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .regular, textColor: .red)
         return label
     }()

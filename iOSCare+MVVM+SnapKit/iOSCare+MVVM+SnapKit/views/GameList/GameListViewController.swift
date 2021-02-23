@@ -9,7 +9,7 @@ import SnapKit
 import UIKit
 
 class GameListViewController: UIViewController {
-    // MARK: - Vars
+    // MARK: - UIComponents
     lazy var tableView: UITableView = {
         let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -19,27 +19,27 @@ class GameListViewController: UIViewController {
         return tableView
     }()
     
-    lazy var titleLabel: UILabel = {
+    let titleLabel: UILabel = {
         let label: UILabel = UILabel(size: 45, weight: .bold, textColor: .black, text: "Games")
         return label
     }()
     
-    lazy var rankLabel: UILabel = {
+    let rankLabel: UILabel = {
         let label: UILabel = UILabel(size: 25, weight: .bold, textColor: .black, text: "Top10")
         return label
     }()
     
-    lazy var rankView: UIView = {
+    let rankView: UIView = {
         let view: UIView = UIView(frame: .zero)
         return view
     }()
     
-    lazy var newButton: UIButton = {
+    let newButton: UIButton = {
         let button: UIButton = UIButton(size: 25, weight: .bold, textColor: .black, text: "New")
         return button
     }()
     
-    lazy var saleButton: UIButton = {
+    let saleButton: UIButton = {
         let button: UIButton = UIButton(size: 25, weight: .bold, textColor: .black, text: "Sale")
         return button
     }()
