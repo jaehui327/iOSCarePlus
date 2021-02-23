@@ -19,6 +19,7 @@
 		D7535D5525DA8A9A007DF3D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5425DA8A9A007DF3D7 /* Images.xcassets */; };
 		D7535D5825DA8A9A007DF3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5625DA8A9A007DF3D7 /* LaunchScreen.storyboard */; };
 		D7535D6C25DA8D4A007DF3D7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D7535D6B25DA8D4A007DF3D7 /* .swiftlint.yml */; };
+		D783BD4625E4C04400C225F8 /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783BD4525E4C04400C225F8 /* GameListViewModel.swift */; };
 		D96F0FAC25E3E98F00A304C0 /* NewGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0FAB25E3E98F00A304C0 /* NewGameModel.swift */; };
 		D96F0FB025E3E9F200A304C0 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0FAF25E3E9F200A304C0 /* GameItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		D7535D5725DA8A9A007DF3D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7535D5925DA8A9A007DF3D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7535D6B25DA8D4A007DF3D7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		D783BD4525E4C04400C225F8 /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
 		D96F0FAB25E3E98F00A304C0 /* NewGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameModel.swift; sourceTree = "<group>"; };
 		D96F0FAF25E3E9F200A304C0 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				D70C36B625E0F0E000898271 /* TabBarViewController.swift */,
 				D70C36C025E0F38100898271 /* HomeViewController.swift */,
 				D70C36BC25E0F20300898271 /* GameListViewController.swift */,
+				D783BD4525E4C04400C225F8 /* GameListViewModel.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D783BD4625E4C04400C225F8 /* GameListViewModel.swift in Sources */,
 				D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */,
 				D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */,
 				D96F0FAC25E3E98F00A304C0 /* NewGameModel.swift in Sources */,

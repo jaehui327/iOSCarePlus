@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
     }()
     
     lazy var gameListVC: GameListViewController = {
-        let gameListVC: GameListViewController = GameListViewController()
+        let gameListVC: GameListViewController = GameListViewController(viewModel: GameListViewModel())
         let tabBarItem: UITabBarItem = UITabBarItem(title: nil, image: UIImage(named: "gameIcon"), selectedImage: UIImage(named: "gameIcon"))
         gameListVC.tabBarItem = tabBarItem
         return gameListVC
