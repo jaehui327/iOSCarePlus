@@ -132,10 +132,18 @@
 			children = (
 				D70C36B625E0F0E000898271 /* TabBarViewController.swift */,
 				D70C36C025E0F38100898271 /* HomeViewController.swift */,
+				D783BD5725E4C81900C225F8 /* GameList */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D783BD5725E4C81900C225F8 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
 				D70C36BC25E0F20300898271 /* GameListViewController.swift */,
 				D783BD4525E4C04400C225F8 /* GameListViewModel.swift */,
 			);
-			path = views;
+			path = GameList;
 			sourceTree = "<group>";
 		};
 		D96F0FAA25E3E97F00A304C0 /* models */ = {
