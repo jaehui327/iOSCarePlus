@@ -51,6 +51,16 @@ class GameListViewController: UIViewController {
         }
     }
     
+    private var getNewGameListURL: String {
+        "https://ec.nintendo.com/api/KR/ko/search/new?count=\(count)&offset=\(offset)"
+    }
+    
+    private var getSaleGameListURL: String {
+        "https://ec.nintendo.com/api/KR/ko/search/sales?count=\(count)&offset=\(offset)"
+    }
+    private var count: Int = 10
+    private var offset: Int = 0
+    
     // MARK: - Initializer
     init(viewModel: GameListViewModel) {
         self.viewModel = viewModel
@@ -62,6 +72,13 @@ class GameListViewController: UIViewController {
     }
     
     // MARK: - life cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        viewModel.setViewModel(url: getNewGameListURL) {
+            self.tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -125,7 +142,11 @@ extension GameListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        30
+        if let count: Int = viewModel.model?.contents.count {
+            return count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -133,8 +154,8 @@ extension GameListViewController: UITableViewDataSource {
         
         if let formalName: String = viewModel.model?.contents[indexPath.row].formalName,
            let heroMannerURL: String = viewModel.model?.contents[indexPath.row].heroBannerURL {
-        let model: GameItemModel = GameItemModel(gameTitle: formalName, gameOriginPrice: 10_000, gameDiscountPrice: nil, imageURL: heroMannerURL)
-        cell.setModel(model)
+            let model: GameItemModel = GameItemModel(gameTitle: formalName, gameOriginPrice: 10_000, gameDiscountPrice: nil, imageURL: heroMannerURL)
+            cell.setModel(model)
         }
         
         cell.selectionStyle = .none
