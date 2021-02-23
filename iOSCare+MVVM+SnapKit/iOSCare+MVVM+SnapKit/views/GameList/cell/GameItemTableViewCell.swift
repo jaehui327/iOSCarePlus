@@ -11,22 +11,28 @@ import UIKit
 
 class GameItemTableViewCell: UITableViewCell {
     // MARK: - UIComponents
-    let gameImageView: UIImageView = {
+    lazy var gameImageView: UIImageView = {
         let imageView: UIImageView = UIImageView(frame: .zero)
+        imageView.contentMode = .scaleAspectFill
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 9
+        imageView.layer.borderWidth = 1
+        imageView.layer.borderColor = UIColor.veryLightPinkTwo.cgColor
         return imageView
     }()
     
-    let gameTitleLabel: UILabel = {
+    lazy var gameTitleLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .semibold, textColor: .black)
+        label.numberOfLines = 0
         return label
     }()
     
-    let gameOriginPriceLabel: UILabel = {
+    lazy var gameOriginPriceLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .regular, textColor: .veryLightPink)
         return label
     }()
     
-    let gameCurrentPriceLabel: UILabel = {
+    lazy var gameCurrentPriceLabel: UILabel = {
         let label: UILabel = UILabel(size: 17, weight: .regular, textColor: .red)
         return label
     }()
@@ -64,21 +70,22 @@ class GameItemTableViewCell: UITableViewCell {
         [gameImageView, gameTitleLabel, labelStackView].forEach { contentView.addSubview($0) }
         
         gameImageView.snp.makeConstraints {
-            $0.width.equalTo(122)
-            $0.height.equalTo(69)
             $0.top.bottom.equalToSuperview().inset(10)
             $0.leading.equalToSuperview().inset(20)
+            $0.width.equalTo(UIScreen.main.bounds.width / 3.0)
+            $0.height.equalTo(gameImageView.snp.width).multipliedBy(5.0 / 7.0)
         }
         
         gameTitleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(12)
             $0.leading.equalTo(gameImageView.snp.trailing).offset(12)
-            $0.trailing.greaterThanOrEqualToSuperview().inset(12)
+            $0.trailing.equalToSuperview().inset(12)
         }
         
         labelStackView.snp.makeConstraints {
             $0.top.equalTo(gameTitleLabel.snp.bottom)
-            $0.leading.equalTo(gameImageView.snp.trailing)
+            $0.leading.equalTo(gameTitleLabel)
+//            $0.bottom.greaterThanOrEqualToSuperview().inset(10)
         }
         
         [gameOriginPriceLabel, gameCurrentPriceLabel].forEach { labelStackView.addArrangedSubview($0) }
@@ -93,10 +100,6 @@ class GameItemTableViewCell: UITableViewCell {
         
         let imageURL: URL? = URL(string: model.imageURL)
         gameImageView.kf.setImage(with: imageURL)
-        
-        gameImageView.layer.cornerRadius = 9
-        gameImageView.layer.borderWidth = 1
-        gameImageView.layer.borderColor = UIColor(red: 236 / 255.0, green: 236 / 255.0, blue: 236 / 255.0, alpha: 1).cgColor
         
         gameTitleLabel.text = model.gameTitle
         if let discountPrice: Int = model.gameDiscountPrice {

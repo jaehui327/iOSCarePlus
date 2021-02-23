@@ -13,9 +13,10 @@ class GameListViewController: UIViewController {
     lazy var tableView: UITableView = {
         let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.register(GameItemTableViewCell.self, forCellReuseIdentifier: GameItemTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(GameItemTableViewCell.self, forCellReuseIdentifier: GameItemTableViewCell.identifier)
         return tableView
     }()
     
@@ -126,6 +127,9 @@ class GameListViewController: UIViewController {
 
 // MARK: - UITableViewDelegate
 extension GameListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
 }
 
 // MARK: - UITableViewDataSource
