@@ -13,13 +13,13 @@
 		D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36C025E0F38100898271 /* HomeViewController.swift */; };
 		D70C36C825E0F66600898271 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36C725E0F66600898271 /* UILabel+Extension.swift */; };
 		D70C36CB25E0F8C900898271 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */; };
-		D71C027E25DE9874003F1902 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D71C027D25DE9874003F1902 /* Colors.xcassets */; };
 		D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */; };
 		D7535D4E25DA8A97007DF3D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */; };
 		D7535D5525DA8A9A007DF3D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5425DA8A9A007DF3D7 /* Images.xcassets */; };
 		D7535D5825DA8A9A007DF3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535D5625DA8A9A007DF3D7 /* LaunchScreen.storyboard */; };
 		D7535D6C25DA8D4A007DF3D7 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = D7535D6B25DA8D4A007DF3D7 /* .swiftlint.yml */; };
 		D783BD4625E4C04400C225F8 /* GameListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783BD4525E4C04400C225F8 /* GameListViewModel.swift */; };
+		D783BD5A25E4C8E100C225F8 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D783BD5925E4C8E100C225F8 /* UIColor+Extension.swift */; };
 		D96F0FAC25E3E98F00A304C0 /* NewGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0FAB25E3E98F00A304C0 /* NewGameModel.swift */; };
 		D96F0FB025E3E9F200A304C0 /* GameItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96F0FAF25E3E9F200A304C0 /* GameItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -33,7 +33,6 @@
 		D70C36C025E0F38100898271 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D70C36C725E0F66600898271 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		D71C027D25DE9874003F1902 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D7535D4825DA8A97007DF3D7 /* iOSCare+MVVM+SnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSCare+MVVM+SnapKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		D7535D5925DA8A9A007DF3D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7535D6B25DA8D4A007DF3D7 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		D783BD4525E4C04400C225F8 /* GameListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListViewModel.swift; sourceTree = "<group>"; };
+		D783BD5925E4C8E100C225F8 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D96F0FAB25E3E98F00A304C0 /* NewGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameModel.swift; sourceTree = "<group>"; };
 		D96F0FAF25E3E9F200A304C0 /* GameItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +80,7 @@
 			children = (
 				D70C36C725E0F66600898271 /* UILabel+Extension.swift */,
 				D70C36CA25E0F8C900898271 /* UIButton+Extension.swift */,
+				D783BD5925E4C8E100C225F8 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -119,7 +120,6 @@
 			children = (
 				D7535D4B25DA8A97007DF3D7 /* AppDelegate.swift */,
 				D7535D4D25DA8A97007DF3D7 /* SceneDelegate.swift */,
-				D71C027D25DE9874003F1902 /* Colors.xcassets */,
 				D7535D5425DA8A9A007DF3D7 /* Images.xcassets */,
 				D7535D5625DA8A9A007DF3D7 /* LaunchScreen.storyboard */,
 				D7535D5925DA8A9A007DF3D7 /* Info.plist */,
@@ -216,7 +216,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7535D6C25DA8D4A007DF3D7 /* .swiftlint.yml in Resources */,
-				D71C027E25DE9874003F1902 /* Colors.xcassets in Resources */,
 				D7535D5825DA8A9A007DF3D7 /* LaunchScreen.storyboard in Resources */,
 				D7535D5525DA8A9A007DF3D7 /* Images.xcassets in Resources */,
 			);
@@ -292,6 +291,7 @@
 				D783BD4625E4C04400C225F8 /* GameListViewModel.swift in Sources */,
 				D70C36C125E0F38100898271 /* HomeViewController.swift in Sources */,
 				D7535D4C25DA8A97007DF3D7 /* AppDelegate.swift in Sources */,
+				D783BD5A25E4C8E100C225F8 /* UIColor+Extension.swift in Sources */,
 				D96F0FAC25E3E98F00A304C0 /* NewGameModel.swift in Sources */,
 				D70C36C825E0F66600898271 /* UILabel+Extension.swift in Sources */,
 				D70C36B725E0F0E000898271 /* TabBarViewController.swift in Sources */,

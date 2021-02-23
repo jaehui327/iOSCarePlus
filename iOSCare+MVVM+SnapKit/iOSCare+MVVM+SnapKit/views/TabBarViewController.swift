@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.tabBar.barTintColor = UIColor(named: "blackTwo")
+        self.tabBar.barTintColor = .blackTwo
         self.viewControllers = [homeVC, gameListVC]
     }
     
